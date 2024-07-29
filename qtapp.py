@@ -26,7 +26,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.player = MPV(
             wid=str(int(self.label.winId())),
             input_default_bindings=True,
-            input_vo_keyboard=True
+            input_vo_keyboard=True,
+            osc=True
         )
 
         @self.player.key_binding("q")
